@@ -11,7 +11,7 @@ module.exports.botTwitter = (event, context, callback) => {
   let params = {
     q: "#javascript",
     result_type: "recent",
-    count: 100,
+    count: 150,
   };
   t.get("search/tweets", params, (err, data, response) => {
     let tweets = data.statuses;
